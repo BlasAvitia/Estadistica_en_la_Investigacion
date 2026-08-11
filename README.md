@@ -14,7 +14,7 @@ Curso_de_Doctorado_Semestre_Agosto2026
 
 ##Elementos de aprendizaje
 
---
+--Realizamos la práctica de clonado de R hacia Github
 
 +Usuario de github: Blas Avitia
 
