@@ -16,4 +16,10 @@ Curso_de_Doctorado_Semestre_Agosto2026
 
 --
 
++Usuario de github: Blas Avitia
+
+madaza.avitia\@gmail.com
+
+pasword Arellano79
+
 **Descripción del curso**
