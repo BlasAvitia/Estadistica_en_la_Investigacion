@@ -20,6 +20,8 @@ Curso_de_Doctorado_Semestre_Agosto2026
 
 madaza.avitia\@gmail.com
 
+Prueba 1
+
 pasword Arellano79
 
 **Descripción del curso**
