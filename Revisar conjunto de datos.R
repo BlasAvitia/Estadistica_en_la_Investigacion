@@ -1,5 +1,5 @@
 # Blas Avitia Arellano
-# 2268999
+# 2327168
 # 18/08/2026
 
 #Importar Datos----
@@ -32,4 +32,15 @@ sd(IE$IE)
 var(IE$IE)
 fivenum(IE$IE)
 
-boxplot(IE$IE) 
+# Boxplot ----
+boxplot(IE$IE ~ IE$Tratamiento,
+        col = "red",
+        xlab = "Tratamientos",
+        ylab = "Índice") 
+
+
+
+
+# Revisar homogeneidad de varianzas----
+bartlett.test(IE$IE ~ IE$Tratamiento)
+ 

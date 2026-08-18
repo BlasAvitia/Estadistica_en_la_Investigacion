@@ -170,4 +170,87 @@
 
 \pandocbounded{\includegraphics[keepaspectratio]{Revisar-conjunto-de-datos_files/Revisar-conjunto-de-datos_files/figure-latex/unnamed-chunk-1-1.pdf}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Normalidad datos {-}{-}{-}{-}}
+
+\FunctionTok{shapiro.test}\NormalTok{(IE}\SpecialCharTok{$}\NormalTok{IE)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Shapiro-Wilk normality test
+## 
+## data:  IE$IE
+## W = 0.96225, p-value = 0.1777
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(IE}\SpecialCharTok{$}\NormalTok{IE)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.8371429
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sd}\NormalTok{(IE}\SpecialCharTok{$}\NormalTok{IE)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.1650319
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(IE}\SpecialCharTok{$}\NormalTok{IE)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.02723554
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{fivenum}\NormalTok{(IE}\SpecialCharTok{$}\NormalTok{IE)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.550 0.700 0.795 0.940 1.160
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Boxplot {-}{-}{-}{-}}
+\FunctionTok{boxplot}\NormalTok{(IE}\SpecialCharTok{$}\NormalTok{IE }\SpecialCharTok{\textasciitilde{}}\NormalTok{ IE}\SpecialCharTok{$}\NormalTok{Tratamiento,}
+        \AttributeTok{col =} \StringTok{"red"}\NormalTok{,}
+        \AttributeTok{xlab =} \StringTok{"Tratamientos"}\NormalTok{,}
+        \AttributeTok{ylab =} \StringTok{"Índice"}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Revisar-conjunto-de-datos_files/Revisar-conjunto-de-datos_files/figure-latex/unnamed-chunk-1-2.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Revisar homogeneidad de varianzas{-}{-}{-}{-}}
+\FunctionTok{bartlett.test}\NormalTok{(IE}\SpecialCharTok{$}\NormalTok{IE }\SpecialCharTok{\textasciitilde{}}\NormalTok{ IE}\SpecialCharTok{$}\NormalTok{Tratamiento)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Bartlett test of homogeneity of variances
+## 
+## data:  IE$IE by IE$Tratamiento
+## Bartlett's K-squared = 3.7423, df = 1, p-value = 0.05305
+\end{verbatim}
+
 \end{document}
