@@ -23,4 +23,13 @@ hist(IE$IE,
      col = "lightblue")
 
 
- 
+# Normalidad datos ----
+
+shapiro.test(IE$IE)
+
+mean(IE$IE)
+sd(IE$IE)
+var(IE$IE)
+fivenum(IE$IE)
+
+boxplot(IE$IE) 
