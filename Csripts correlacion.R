@@ -4,9 +4,9 @@ datos <- read.csv("bosque.csv", header = T)
 
 
 ## Distribución de pares de datos
-plot(datos$diametro, datos$altura, 
+plot(datos$diametro, datos$altura,
 pch = 19, col = "red",
-xlab = "variable independiente (dbh),
+xlab = "variable independiente (dbh)",
 ylab = "variable dependiente (h)")
 
 
@@ -21,11 +21,12 @@ hist(datos$altura)
 
 
 datos$dbh_log <- log10(datos$diametro)
-datos$dbh_spr <- sprt(datos$diametro)
-
+datos$dbh_sqr <- sqrt(datos$diametro)
 
 hist(datos$dbh_log)
-
+shapiro.test(datos$dbh_log)
+shapiro.test(datos$dbh_sqr)
+hist(datos$dbh_sqr)
 
 
 ## Prueba de correlación no paramétrica
