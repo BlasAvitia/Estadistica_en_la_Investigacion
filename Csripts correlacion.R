@@ -35,3 +35,4 @@ cor.test(datos$diametro, datos$altura, method = "pearson")
 
 
 
+
