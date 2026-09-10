@@ -51,11 +51,11 @@ t.test(cuadro1$Diametro, mu = 16.5, alternative = "two.sided")
 
 
 ## Identificar los resultados
-  * Estadístico de t=-1.547
-  * Grados de Libertad=49
-  * Valor de p=0.1238
-  * Media de la muestra=15.794
-  * Intervalo de confianza al 95%= 14.87689-16.71111
+## Estadistico de t=-1.547
+## Grados de Libertad=49
+## Valor de p=0.1238
+## Media de la muestra=15.794
+## Intervalo de confianza al 95%= 14.87689-16.71111
 
 ## Con α=0.05 indicar si se rechaza o no se rechaza H0
 ## NO SE RECHAZA LA HIPOTESIS NULA (H0).
