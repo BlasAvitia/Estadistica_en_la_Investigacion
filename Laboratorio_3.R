@@ -9,7 +9,7 @@
 trees<-read.csv("DBH_1.csv",header=TRUE)
 head(trees)
 
-## Ingresar datos a la consola de R
+## Ingresar datos a la consola de R.
 
 dbh<-c(16.5, 25.3, 22.1, 17.2, 16.1, 8.1, 34.3, 5.4, 5.7, 11.2, 24.1, 
        14.5, 7.7, 15.6, 15.9, 10.0, 17.5, 20.5, 7.8, 27.3, 9.7, 6.5, 
